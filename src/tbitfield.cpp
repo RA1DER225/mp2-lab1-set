@@ -12,9 +12,23 @@ static const int FAKE_INT = -1;
 static TBitField FAKE_BITFIELD(1);
 static size_t s = sizeof(TELEM) * 8;
 
+
 TBitField::TBitField(int len) 
 {
-    
+    if (len < 1)
+    {
+        throw len;
+    }
+    if (len < 32)
+    {
+        MemLen = 1;
+    }
+    else
+    {
+        MemLen = ((len - 1) >> 5) + 1;//((len - 1)/32 )
+        BitLen = len;
+        pMem = new TELEM[MemLen];
+    }
 }
 
 TBitField::TBitField(const TBitField &bf) // конструктор копирования
@@ -76,11 +90,40 @@ int TBitField::GetBit(const int n) const // получить значение б
 
 TBitField& TBitField::operator=(const TBitField &bf) // присваивание
 {
+    if (this != &bf)
+    {
+        delete[] pMem;
+        BitLen = bf.BitLen;
+        pMem = new TELEM[bf.MemLen];
+        for (int i = 0; i < MemLen; i++)
+        {
+            pMem[i] = bf.pMem[i];
+        }
+        MemLen = bf.MemLen;
+    }
     return FAKE_BITFIELD;
 }
 
 int TBitField::operator==(const TBitField &bf) const // сравнение
 {
+    if (MemLen != bf.MemLen || BitLen != bf.BitLen)
+    {
+        return false;
+    }
+    else
+    {
+        for (int i  = 0; i < MemLen; i++)
+        {
+            if (pMem[i] == bf.pMem[i])
+            {
+                continue;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
   return FAKE_INT;
 }
 
