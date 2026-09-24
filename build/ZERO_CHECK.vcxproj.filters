@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\build\CMakeFiles\bd8fd5bcf9a4e71dda628a4066b86f9c\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\build\CMakeFiles\5b79f678cf1e3805846152da38c3c539\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{12FE4BEC-273D-3FCF-9941-7427D239F83C}</UniqueIdentifier>
+      <UniqueIdentifier>{174ED0F6-F173-3675-A120-20B03B444BB9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

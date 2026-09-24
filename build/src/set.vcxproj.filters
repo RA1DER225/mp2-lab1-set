@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\src\tbitfield.cpp">
+    <ClCompile Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\src\tbitfield.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\src\tset.cpp">
+    <ClCompile Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\src\tset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\include\tbitfield.h">
+    <ClInclude Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\include\tbitfield.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\include\tset.h">
+    <ClInclude Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\include\tset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{3879D518-AED9-3DAE-AE56-1ACA21956D7C}</UniqueIdentifier>
+      <UniqueIdentifier>{3F916C70-6556-38ED-A6AF-E5E22B9556A0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{3159D498-A5CF-3023-973F-9661ED86DE8C}</UniqueIdentifier>
+      <UniqueIdentifier>{1DF6AD90-E8A1-3958-8DDE-BF9289C5D0C9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/helka/OneDrive/Desktop/git/Binary pole/mp2-lab1-set/gtest
+# Install script for directory: C:/Users/s25380160/Desktop/git/mp2-lab1-set/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,6 +35,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/helka/OneDrive/Desktop/git/Binary pole/mp2-lab1-set/build/gtest/install_local_manifest.txt"
+  file(WRITE "C:/Users/s25380160/Desktop/git/mp2-lab1-set/build/gtest/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

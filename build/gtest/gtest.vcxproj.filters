@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\gtest\gtest-all.cc">
+    <ClCompile Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\gtest\gtest-all.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\helka\OneDrive\Desktop\git\Binary pole\mp2-lab1-set\gtest\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\s25380160\Desktop\git\mp2-lab1-set\gtest\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{3159D498-A5CF-3023-973F-9661ED86DE8C}</UniqueIdentifier>
+      <UniqueIdentifier>{1DF6AD90-E8A1-3958-8DDE-BF9289C5D0C9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
