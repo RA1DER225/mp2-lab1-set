@@ -237,6 +237,6 @@ ostream &operator<<(ostream &ostr, const TBitField &bf) // вывод
     {
         ostr << bf.GetBit(i) << " ";
     }
-    cout << endl;
+    ostr << endl;
     return ostr;
 }
