@@ -7,17 +7,18 @@
 
 #include "tbitfield.h"
 #include <iomanip>
+#include <iostream>
 // Fake variables used as placeholders in tests
 static const int FAKE_INT = -1;
 static TBitField FAKE_BITFIELD(1);
 static size_t s = sizeof(TELEM) * 8;
 
-
+using namespace std;
 TBitField::TBitField(int len) 
 {
     if (len < 1)
     {
-        throw len;
+        std::cout << "Error TBitField (int len)\n";
     }
     if (len < 32)
     {
@@ -54,6 +55,7 @@ TBitField::TBitField(const TBitField &bf) // конструктор копиро
 TBitField::~TBitField()
 {
     delete[] pMem;
+    pMem = nullptr;
 }
 
 
@@ -78,7 +80,7 @@ void TBitField::SetBit(const int n) // установить бит
 {
     if ((n < 0) || (n >= BitLen))
     {
-        throw n;
+        std:: cout << "Error TBitField::SetBit(const int n)\n";
     }
     pMem[GetMemIndex(n)] |= GetMemMask(n);
 }
@@ -87,7 +89,7 @@ void TBitField::ClrBit(const int n) // очистить бит
 {
     if ((n < 0) || (n >= BitLen))
     {
-        throw n;
+        std::cout << "Error TBitField::ClrBit(const int n)\n";
     }
     pMem[GetMemIndex(n)] &= ~GetMemMask(n);
 }
@@ -96,7 +98,7 @@ int TBitField::GetBit(const int n) const // получить значение б
 {
     if (n < 0 || n >= BitLen)
     { 
-        throw n;
+        std::cout << "Error TBitField::GetBit(const int n) const\n";
     }
     return (pMem[GetMemIndex(n)] & GetMemMask(n)) != 0;
 }
