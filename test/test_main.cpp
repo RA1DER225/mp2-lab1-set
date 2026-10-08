@@ -2,19 +2,10 @@
 #include<iostream>
 using namespace std;
 
-void Sieve_of_Eratosthenes()
+TSet Sieve_of_Eratosthenes(TSet &S)
 {
-	int N;
-	cout << "N = ";
-	cin >> N;
-	if (N < 2) {
-		cout << "There are no prime numbers\n";
-		return;
-	}
-
-	// Универсум мощностью N+1
-	TSet S(N + 1);
-
+	int N = S.GetMaxPower()-1;
+	cout << "GetMaxPower : " << N<<endl;
 	// 1) Заносим в множество все числа от 2 до N
 	for (int i = 2; i <= N; ++i)
 		S.InsElem(i);
@@ -43,12 +34,20 @@ void Sieve_of_Eratosthenes()
 		}
 	}
 	cout << "\nTotal: " << cnt << endl;
+	cout << S<<endl;
+	return S;
 	
+}
+
+TSet Retern_Sieve_of_Eratosthenes(TSet &S)
+{
+	TSet tmp(~S);
+	return tmp;
 }
 
 
 int main() {
-	int len1 = 8;
+	/*int len1 = 8;
 	int len2 = 16;
 	TBitField a(len1);
 	TBitField a0(len1);
@@ -316,15 +315,32 @@ int main() {
 	TSet tmp5(~A);
 	cout <<"A:"<< A << endl;
 	cout << tmp5 << endl;
-	cout << endl;
+	cout << endl;*/
 
 	cout << "----SIEVE_OF_ERATOSTHENES----\n";
-	Sieve_of_Eratosthenes();
-	a.~TBitField();
-	a0.~TBitField();
-	c.~TBitField();
-	b.~TBitField();
-	tmp1bf.~TBitField();
-	tmp2bf.~TBitField();
-	d.~TBitField();
+
+	int N;
+	cout << "N = ";
+	cin >> N; 
+	TSet S(N + 1);
+	if (N < 2) {
+		cout << "There are no prime numbers\n";
+	}
+	else
+	{
+		Sieve_of_Eratosthenes(S);
+		cout << S<<endl;
+	}
+	cout << "----Retern_Sieve_of_Eratosthenes----\n";
+	S=Retern_Sieve_of_Eratosthenes(S);
+	cout << S;
+
+	
+	//a.~TBitField();
+	//a0.~TBitField();
+	//c.~TBitField();
+	//b.~TBitField();
+	//tmp1bf.~TBitField();
+	//tmp2bf.~TBitField();
+	//d.~TBitField();
 }
